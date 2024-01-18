@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="uicomponents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet your animal needs here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eec-1K-DBS">
+                                <rect key="frame" x="24" y="95.000000000000014" width="315" height="143.33333333333337"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy.onboarding" translatesAutoresizingMaskIntoConstraints="NO" id="yu7-Wf-Qqf">
+                                <rect key="frame" x="24" y="246.33333333333337" width="345" height="345"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yu7-Wf-Qqf" secondAttribute="height" multiplier="1:1" id="oY1-QT-yGD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get interesting promos here, register your account immediately so you can meet your animal needs." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkt-Ge-FpG">
+                                <rect key="frame" x="24" y="608.33333333333337" width="345" height="33.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="DarkGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mEN-m3-w5R">
+                                <rect key="frame" x="138.66666666666666" y="666" width="116" height="26"/>
+                                <color key="pageIndicatorTintColor" name="DarkGrey"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemIndigoColor"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbu-CM-ZCT">
+                                <rect key="frame" x="24" y="734" width="345" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Zsh-ra-Gpo"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get Started" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wbu-CM-ZCT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="6AD-J4-3sp"/>
+                            <constraint firstItem="Xkt-Ge-FpG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="7Rg-Bq-cOk"/>
+                            <constraint firstItem="Xkt-Ge-FpG" firstAttribute="top" secondItem="yu7-Wf-Qqf" secondAttribute="bottom" constant="17" id="EN0-TF-WQ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wbu-CM-ZCT" secondAttribute="bottom" constant="24" id="KOh-89-Dif"/>
+                            <constraint firstItem="Eec-1K-DBS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" multiplier="1:1" constant="24" id="Kb2-sm-1rt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbu-CM-ZCT" secondAttribute="trailing" constant="24" id="V0e-7t-kEz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yu7-Wf-Qqf" secondAttribute="trailing" multiplier="1:1" constant="24" id="ZlO-FA-qGT"/>
+                            <constraint firstItem="yu7-Wf-Qqf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" multiplier="1:1" constant="24" id="aQL-Qw-QQ4"/>
+                            <constraint firstAttribute="trailing" secondItem="Xkt-Ge-FpG" secondAttribute="trailing" constant="24" id="esX-IM-znE"/>
+                            <constraint firstItem="Eec-1K-DBS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="1:1" constant="36" id="f88-HE-pE0"/>
+                            <constraint firstItem="mEN-m3-w5R" firstAttribute="top" secondItem="Xkt-Ge-FpG" secondAttribute="bottom" constant="24" id="kPA-yj-nfQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Eec-1K-DBS" secondAttribute="trailing" multiplier="1:1" constant="54" id="mSc-Wr-G7y"/>
+                            <constraint firstItem="mEN-m3-w5R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="prx-sK-c6K"/>
+                            <constraint firstItem="yu7-Wf-Qqf" firstAttribute="top" secondItem="Eec-1K-DBS" secondAttribute="bottom" multiplier="1:1" constant="8" id="zDG-3o-bWz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dummy.onboarding" width="319" height="319"/>
+        <namedColor name="DarkGrey">
+            <color red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
