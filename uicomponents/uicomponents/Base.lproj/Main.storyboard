@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gKT-rz-3yP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mrz-kP-WIY">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -283,9 +283,36 @@ Welcome Back!</string>
             </objects>
             <point key="canvasLocation" x="674.04580152671758" y="-27.464788732394368"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ziO-O1-GML">
+            <objects>
+                <viewController id="Mrz-kP-WIY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mEK-zr-P03">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy.product" translatesAutoresizingMaskIntoConstraints="NO" id="O9R-cp-Cox">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="340.66666666666669"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L0e-1h-G1p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O9R-cp-Cox" firstAttribute="height" secondItem="mEK-zr-P03" secondAttribute="height" multiplier="0.4" id="8VD-RN-Ioj"/>
+                            <constraint firstItem="O9R-cp-Cox" firstAttribute="leading" secondItem="L0e-1h-G1p" secondAttribute="leading" id="Wb5-6f-z5J"/>
+                            <constraint firstItem="O9R-cp-Cox" firstAttribute="top" secondItem="mEK-zr-P03" secondAttribute="top" id="fWH-2G-pek"/>
+                            <constraint firstItem="O9R-cp-Cox" firstAttribute="trailing" secondItem="L0e-1h-G1p" secondAttribute="trailing" id="gSb-cp-jYL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJY-YP-CyG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412.9770992366412" y="-27.464788732394368"/>
+        </scene>
     </scenes>
     <resources>
         <image name="dummy.onboarding" width="319" height="319"/>
+        <image name="dummy.product" width="1768" height="2650.666748046875"/>
         <image name="facebook" width="13" height="22"/>
         <image name="google" width="26" height="25"/>
         <namedColor name="AccentColor">
